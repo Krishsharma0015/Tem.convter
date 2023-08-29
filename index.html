@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel-Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Hotel</h1>
+            <div class="video-container">
+                <video controls>
+                    <source src="images/_import_61543ac8153865.90115071_FPpreview.mp4".mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+        </header>
+
+        <section class="room-selection">
+            <h2>Rooms View & Price</h2>
+            <div>
+                <img src="images/deluxe room 1.jpg" alt="Deluxe Room">
+                <p>Deluxe Room: 2500 rupee/day</p>
+            </div>
+            <div>
+                <img src="images/luxury-classic-modern-bedroom-suite-hotel.jpg" alt="Suite Room">
+                <p>Suite Room: 4000 rupee/day</p>
+            </div>
+        </section>
+
+        <form id="bookingForm">
+            <h2>Booking Details</h2>
+
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin">
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout">
+
+            <label for="roomType">Room Type:</label>
+            <select id="roomType">
+                <option value="deluxe">Deluxe</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="persons">Number of Persons:</label>
+            <input type="number" id="persons" min="1" value="1">
+
+            <h3>Additional Amenities:</h3>
+            <label><input type="checkbox" id="ac"> AC (1000 rupee)</label>
+            <label><input type="checkbox" id="locker"> Locker (300 rupee)</label>
+
+            <h3>Add Food:</h3>
+            <label><input type="checkbox" id="food"> Breakfast, Lunch, Dinner, Beverages, Snacks (1000 rupee)</label>
+
+            <input type="submit" value="Calculate Cost">
+        </form>
+
+        <footer>
+            <h2>Contact & Address</h2>
+            <p>Contact us at: [+123-456-789]</p>
+            <p>About Hotel: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi modi hic, architecto provident optio ea adipisci repellat quod delectus tempore, repudiandae, voluptate atque porro officia velit harum quo asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores architecto corporis aliquam culpa, distinctio nesciunt repudiandae vel dolore itaque eum error quisquam laborum nostrum, magni totam quae eaque eveniet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe accusamus necessitatibus amet dolorem, hic excepturi? Inventore, vel. Quidem natus facilis ad animi sequi excepturi ea, magni unde? Ducimus, ipsam minima! Lorem</p>
+            <p>Address: [Meerut , Uttarpardesh, India]</p>
+            <img src="images/IMG_20230612_212020_874.jpg" alt="Owner's Image">
+            <p>Owner: [Krish Sharma]</p>
+            <p>Owner Add: Meeurt , Up</p>
+            <p>Owner Cont: +91 8171584578</p>
+            <p> About Owner: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vel. Molestiae recusandae, vel fugit accusantium quae cupiditate corrupti ullam vero minima quibusdam ex laboriosam odit aliquid non? Provident, hic voluptatum! lorem ipsum</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
